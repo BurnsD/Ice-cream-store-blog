@@ -27,7 +27,9 @@
     "handlebars": "^4.7.7",
     "mysql2": "^2.3.3",
     "node.js": "^0.0.1-security",
-    "sequelize": "^6.17.0",
+    "sequelize": "^6.17.0"
+  },
+  "devDependencies": {
     "tailwindcss": "^3.0.23"
   }
 }
