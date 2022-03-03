@@ -16,7 +16,9 @@ async function newFormHandler(event) {
     });
   
     if (response.ok) {
-      document.location.replace('/dashboard');
+      console.log ("ABOUT TO HIT ERROR ****************" + document.location)
+        document.location.replace('/dashboard');
+
     } else {
       alert(response.statusText);
     }
