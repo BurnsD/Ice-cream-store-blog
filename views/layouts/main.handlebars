@@ -21,7 +21,7 @@
       <nav>
         {{#if loggedIn}}
         <a href="/dashboard">dashboard</a>
-        <button id="logout" class="bg-blue-500 text-white font-bold py-2 px-4">logout</button>
+        <button id="logout" class="bg-red-500 text-white font-bold py-2 px-4">logout</button>
         {{else}}
         <nav class="nav">
             <ul class="nav__list">
@@ -35,14 +35,28 @@
     <main>
       {{{ body }}}
     </main>
-    <footer>
-      Come back before the ice cream melts!
-      <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com/BurnsD/Ice-cream-store-blog">
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+                <h2>About us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quia atque nemo ad modi officiis
+                    iure, autem nulla tenetur repellendus.</p>
+            </div>
+            <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
+                <h2>Newsletter</h2>
+                <p>Stay update with our latest</p>
+                <div class="form-element">
+                    <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Copyright ©2022 <a class="social-list__link" href="https://github.com/BurnsD/Ice-cream-store-blog">
                         <i class="fab fa-github"></i>
                     </a>
-                </li>
+            </h4>
+        </div>
     </footer>
   </div>
   
