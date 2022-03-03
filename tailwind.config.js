@@ -1,7 +1,12 @@
 module.exports = {
-  content: [],
+  content: [
+    './**/*.{html,js}',
+  ],
   theme: {
-    extend: {},
+    contianer: {
+      center: true,
+      padding: '2rem'
+    }
   },
   plugins: [],
 }

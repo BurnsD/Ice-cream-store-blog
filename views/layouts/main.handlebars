@@ -7,7 +7,7 @@
   <title>Ice Cream Store Blog</title>
 
   <link rel="stylesheet" href="/stylesheet/style.css">
-  {{!-- <link rel="stylesheet" href="/css/styleoverride.css"> --}}
+  <link rel="stylesheet" href="/css/styleoverride.css">
 
    <script src="https://kit.fontawesome.com/e37a4f46b8.js" crossorigin="anonymous"></script>
 </head>
@@ -21,9 +21,14 @@
       <nav>
         {{#if loggedIn}}
         <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn-no-style">logout</button>
+        <button id="logout" class="bg-blue-500 text-white font-bold py-2 px-4">logout</button>
         {{else}}
-        <a href="/login">Login</a>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item "><a href="/login" class="nav__link btn">Login</a></li>
+            </ul>
+        </nav>  
+        {{!-- <a href="/login">Login</a> --}}
         {{/if}}
       </nav>
     </header>
