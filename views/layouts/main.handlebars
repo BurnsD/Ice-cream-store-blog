@@ -4,30 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ice Cream Store Blog</title>
+  <title>Ice Cream Blog</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 <body>
   <div class="wrapper">
     <header>
-      <h1>
-        <a href="/">Ice Cream Store Blog</a>
-      </h1>
       <nav>
         {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn-no-style">logout</button>
+        <a href="/">Home</a>
+        <a href="/dashboard">Dashboard</a>
+        <button id="logout" class="btn-no-style">Logout</button>
         {{else}}
+        <a href="/">Home</a>
         <a href="/login">Login</a>
         {{/if}}
       </nav>
     </header>
+    <a class="bktech" href="/">Ice Cream Blog</a>
     <main>
       {{{ body }}}
     </main>
     <footer>
-      Come back before the ice cream melts!
+      We hope you have enjoyed the Ice Cream Blog! Come back soon!
     </footer>
   </div>
   
