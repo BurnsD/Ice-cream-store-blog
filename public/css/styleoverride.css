@@ -122,6 +122,33 @@ header {
 
 /* End of Header Style */
 
+/* Login form style */
+
+/* .login-form {
+    width: 250px;
+    height: 250px;
+    background: grey;
+    color: #ffffff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+} */
+
+/* .signup-form {
+    width: 250px;
+    height: 250px;
+    background: grey;
+    color: #ffffff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+} */
+
+
 /* Footer Style */
 
 footer.footer{
@@ -164,13 +191,6 @@ footer.footer .newsletter .form-element span{
     background: var(--sky);
     padding: .5rem .7rem;
     cursor: pointer;
-}
-
-footer.footer .instagram div > img{
-    display: inline-block;
-    width: 25%;
-    height: 50%;
-    margin: .3rem .4rem;
 }
 
 footer.footer .follow div i{

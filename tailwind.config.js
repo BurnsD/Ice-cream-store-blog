@@ -3,10 +3,7 @@ module.exports = {
     './**/*.{html,js}'
   ],
   theme: {
-    contianer: {
-      center: true,
-      padding: '2rem'
-    }
+    
   },
   plugins: [],
 }
