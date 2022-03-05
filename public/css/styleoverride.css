@@ -83,7 +83,7 @@ p{
 /* Header Style */
 header {
     background: rgb(238, 238, 236);
-    position: sticky;
+    position: relative;
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -114,10 +114,10 @@ header {
 }
 
 .nav__link {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .nav__item:hover {
-    color: black;
+    color: rgb(194, 209, 107);
 }
 
 /* End of Header Style */
