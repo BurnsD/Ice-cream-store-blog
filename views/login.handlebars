@@ -1,4 +1,28 @@
-<form class="login-form">
+{{!-- LOG IN --}}
+<body class="login-body">
+  <div class="center">
+    <h1>Login</h1>
+    <form class="login-form">
+      <div class="txt_field">
+        <input type="text" required id="email-login" />
+        <span></span>
+        <label for="email_login">Email</label>
+      </div>
+      <div class="txt_field">
+        <input type="password" required id="password-login" />
+        <span></span>
+        <label for="password_login">Password</label>        
+      </div>
+      <div class="pass">Forgot Password?</div>
+      <input type="submit" value="Login">
+      <div class="signup_link">
+        Not a member? <a href="#">Sign up</a>
+      </div>
+    </form>
+  </div>
+</body>
+
+{{!-- <form class="login-form">
   <div>
     <label for="email-login">Email:</label>
     <input type="text" id="email-login" />
@@ -8,10 +32,15 @@
     <input type="password" id="password-login" />
   </div>
   <div>
-    <button type="submit">Login</button>
+    <button type="submit" class="submit">Login</button>
   </div>
 </form>
+ --}}
 
+
+{{!-- SIGN UP --}}
+
+{{!-- 
 <form class="signup-form">
   <div>
     <label for="username-signup">Username:</label>
@@ -26,8 +55,8 @@
     <input type="password" id="password-signup" />
   </div>
   <div>
-    <button type="submit">Signup</button>
+    <button type="submit" class="submit">Signup</button>
   </div>
-</form>
+</form> --}}
 
 <script> src="../public/javascript/login.js"</script>
