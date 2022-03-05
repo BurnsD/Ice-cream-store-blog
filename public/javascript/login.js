@@ -15,8 +15,10 @@ async function loginFormHandler(event) {
       });
   
       if (response.ok) {
+        console.log ("Login RESPONSE IS OK");
         document.location.replace('/dashboard/');
       } else {
+        console.log ("Login RESPONSE IS NOT OK");
         alert(response.statusText);
       }
     }
@@ -41,8 +43,7 @@ async function loginFormHandler(event) {
       });
   
       if (response.ok) {
-        console.log ("INSIDE THE LOGIN.JS.")
-        document.location.replace('/dashboard/');
+         document.location.replace('/dashboard/');
       } else {
         alert(response.statusText);
       }
