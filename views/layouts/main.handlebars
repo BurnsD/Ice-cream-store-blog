@@ -23,11 +23,11 @@
         <a href="/dashboard">dashboard</a>
         <button id="logout" class="bg-red-500 text-white font-bold py-2 px-4">logout</button>
         {{else}}
-        <nav class="nav">
+        {{!-- <nav class="nav"> --}}
             <ul class="nav__list">
                 <li class="nav__item "><a href="/login" class="nav__link btn">Login</a></li>
             </ul>
-        </nav>  
+        {{!-- </nav>   --}}
         {{!-- <a href="/login">Login</a> --}}
         {{/if}}
       </nav>
@@ -37,12 +37,12 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+            <div class="about-us">
                 <h2>About us</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quia atque nemo ad modi officiis
                     iure, autem nulla tenetur repellendus.</p>
             </div>
-            <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
+            <div class="newsletter" >
                 <h2>Newsletter</h2>
                 <p>Stay update with our latest</p>
                 <div class="form-element">
