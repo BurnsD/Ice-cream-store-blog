@@ -1,6 +1,6 @@
 async function loginFormHandler(event) {
     event.preventDefault();
-  
+  console.log("hello world");
     const email = document.querySelector('#email-login').value.trim();
     const password = document.querySelector('#password-login').value.trim();
   
@@ -15,8 +15,7 @@ async function loginFormHandler(event) {
       });
   
       if (response.ok) {
-        console.log ("Login RESPONSE IS OK");
-        document.location.replace('/dashboard/');
+        document.location.replace('/dashboard');
       } else {
         console.log ("Login RESPONSE IS NOT OK");
         alert(response.statusText);
@@ -43,7 +42,8 @@ async function loginFormHandler(event) {
       });
   
       if (response.ok) {
-         document.location.replace('/dashboard/');
+        console.log ("INSIDE THE LOGIN.JS.")
+        document.location.replace('/dashboard');
       } else {
         alert(response.statusText);
       }
@@ -52,4 +52,4 @@ async function loginFormHandler(event) {
   
   document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
   
-  document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);
+  // document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);
