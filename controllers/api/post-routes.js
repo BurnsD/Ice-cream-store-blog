@@ -30,6 +30,7 @@ router.get('/', (req, res) => {
   })
     .then(dbPostData => res.json(dbPostData))
     .catch(err => {
+      console.log ("Trying to find where the edit post error is occuring 111111");
       console.log(err);
       res.status(500).json(err);
     });
@@ -69,6 +70,7 @@ router.get('/:id', (req, res) => {
       res.json(dbPostData);
     })
     .catch(err => {
+      console.log ("THE ERROR IS HAPPENING IN POST-ROUTES.JS");
       console.log(err);
       res.status(500).json(err);
     });
@@ -105,6 +107,7 @@ router.put('/:id', withAuth, (req, res) => {
       res.json(dbPostData);
     })
     .catch(err => {
+      console.log ("Trying to find where the edit post error is occuring 22222");
       console.log(err);
       res.status(500).json(err);
     });
@@ -125,6 +128,7 @@ router.delete('/:id', withAuth, (req, res) => {
       res.json(dbPostData);
     })
     .catch(err => {
+      console.log ("Trying to find where the edit post error is occuring 3333333");
       console.log(err);
       res.status(500).json(err);
     });
