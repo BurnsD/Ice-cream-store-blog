@@ -78,6 +78,7 @@ router.get('/edit/:id', withAuth, (req, res) => {
       }
     })
     .catch(err => {
+      console.log ("ERROR IS IN THE DASHBOARD ROUTES");
       res.status(500).json(err);
     });
 });
