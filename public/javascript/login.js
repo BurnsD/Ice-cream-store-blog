@@ -17,6 +17,7 @@ async function loginFormHandler(event) {
       if (response.ok) {
         document.location.replace('/dashboard');
       } else {
+        console.log ("Login RESPONSE IS NOT OK");
         alert(response.statusText);
       }
     }
