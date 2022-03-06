@@ -192,6 +192,34 @@ header {
 }
 /* End of Login Style */
 
+/* Sign up Style */
+
+.signup-body{
+    margin: 0%;
+    padding: 0%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url(../images/icecream-dash.jpg);
+    height: 100vh;
+    overflow: hidden;
+
+    z-index: 100;
+}
+
+/* .signup-form {
+    width: 250px;
+    height: 250px;
+    background: grey;
+    color: #ffffff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+} */
+
+/* Sign up Style End */
+
+
 /* Form style */
 form{
     padding: 0 40px;
@@ -267,19 +295,6 @@ input[type="submit"]:hover{
     border-color: #2691d9;
     transition: .5s;
 }
-
-
-/* .signup-form {
-    width: 250px;
-    height: 250px;
-    background: grey;
-    color: #ffffff;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    box-sizing: border-box;
-} */
 
 /* End of Form style */
 

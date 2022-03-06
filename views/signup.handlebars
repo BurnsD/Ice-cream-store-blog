@@ -1,21 +1,27 @@
 {{!-- SIGN UP --}}
-
-<form class="signup-form">
-  <div>
-    <label for="username-signup">Username:</label>
-    <input type="text" id="username-signup" />
+<div class="signup-body">
+  <div class="center">
+    <h1>Sign up</h1>
+    <form class="signup-form">
+      <div>
+        <label for="username-signup">Username:</label>
+        <input type="text" id="username-signup" />
+      </div>
+      <div class="txt_field">
+        <label for="email-signup">Email:</label>
+        <span></span>
+        <input type="text" id="email-signup" />
+      </div>
+      <div class="txt_field">
+        <label for="password-signup">Password:</label>
+        <span></span>
+        <input type="password" id="password-signup" />
+      </div>
+      <div>
+        <input type="submit" value="Signup">
+      </div>
+    </form>
   </div>
-  <div>
-    <label for="email-signup">Email:</label>
-    <input type="text" id="email-signup" />
-  </div>
-  <div>
-    <label for="password-signup">Password:</label>
-    <input type="password" id="password-signup" />
-  </div>
-  <div>
-    <button type="submit" class="submit">Signup</button>
-  </div>
-</form>
+</div>
 
 <script src="/javascript/signup.js"></script>
