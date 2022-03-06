@@ -33,7 +33,7 @@ ul{
     list-style-type: none;
 }
 li{
-    
+    justify-content: center;
 }
 h1{
     font-family: var(--Lexend);
@@ -284,6 +284,11 @@ input[type="submit"]:hover{
 /* End of Form style */
 
 /* Post Styles */
+.main-post-list{
+    text-align: center;
+    position: relative;
+}
+
 main{
     display: grid;
     grid-template-areas: inherit;
