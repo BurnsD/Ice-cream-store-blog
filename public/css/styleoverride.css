@@ -313,6 +313,14 @@ main{
     padding-bottom: 3rem;
     
 }
+.comments{
+    padding: 1rem 2rem;
+}
+.comment{
+    margin: 0 5px;
+    padding: 2rem 2rem;
+}
+
 /* End of Post Styles */
 
 /* Footer Style */

@@ -2,12 +2,14 @@
 
 {{#if loggedIn}}
 <form class="comment-form">
-  <div>
-    <textarea name="comment-body"></textarea>
+  <div class="txt_field">
+    <label for="comment-add">Add Comment</label>
+      <input type="text" id="comment-body" name="comment-body" />
   </div>
 
   <div>
-    <button type="submit">add comment</button>
+    <input type="submit" value="Add Comment">
+    {{!-- <button type="submit">add comment</button> --}}
   </div>
 </form>
 {{/if}}
