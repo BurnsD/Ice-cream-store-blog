@@ -6,10 +6,6 @@
     --text-light : #686666da;
     --bg-color: #0f0f0f;
     --white: #ffffff;
-    --midnight: #104f55;
-
-    /* gradient color   */
-    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 
     /*      theme font-family   */
     --Abel: 'Abel', cursive;
@@ -36,7 +32,9 @@ a{
 ul{
     list-style-type: none;
 }
-
+li{
+    
+}
 h1{
     font-family: var(--Lexend);
     font-size: 2.5rem;
@@ -76,6 +74,11 @@ p{
     font-family: var(--Lexend);
     color: var(--text-light);
 }
+.p-2{
+    padding: 1rem 2rem;
+    position: relative;
+}
+
 
 /*  Global Classes End*/
 
@@ -93,10 +96,19 @@ header {
 
     z-index: 9999;
 }
-.nav {
-    opacity: 100%;
-    color: var(--clr-light);
+.nav{
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
 }
+
+.nav .nav-menu{    
+    justify-content: space-between;
+
+}
+
 .nav__list {
     list-style: none;
     display: flex;
@@ -115,14 +127,30 @@ header {
 
 .nav__link {
     color: rgb(0, 0, 0);
+    margin-left: 5em;
 }
 .nav__item:hover {
     color: rgb(194, 209, 107);
 }
-
+.logout-btn{
+    width: 75px;
+    height: 25px;
+    border: 1px solid;
+    background: #000000;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+.logout-btn:hover{
+    border-color: #ff4800;
+    transition: .5s;
+}
 /* End of Header Style */
 
-/* Login form style */
+/* Loginstyle */
 
 .login-body{
     margin: 0%;
@@ -134,7 +162,6 @@ header {
 
     z-index: 100;
 }
-
 .center{
     position: absolute;
     top: 50%;
@@ -150,7 +177,22 @@ header {
     border-bottom: 1px solid black;
     font-size: 24px;
 }
+.signup_link{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+}
+.signup_link a{
+    color: #2691d9;
+    text-decoration: none;
+}
+.signup_link a:hover{
+    text-decoration: underline;
+}
+/* End of Login Style */
 
+/* Form style */
 form{
     padding: 0 40px;
     box-sizing: border-box;
@@ -225,19 +267,7 @@ input[type="submit"]:hover{
     border-color: #2691d9;
     transition: .5s;
 }
-.signup_link{
-    margin: 30px 0;
-    text-align: center;
-    font-size: 16px;
-    color: #666;
-}
-.signup_link a{
-    color: #2691d9;
-    text-decoration: none;
-}
-.signup_link a:hover{
-    text-decoration: underline;
-}
+
 
 /* .signup-form {
     width: 250px;
@@ -251,8 +281,39 @@ input[type="submit"]:hover{
     box-sizing: border-box;
 } */
 
+/* End of Form style */
 
-/* End of Login style*/
+/* Post Styles */
+main{
+    display: grid;
+    grid-template-areas: inherit;
+}
+
+.title{
+    text-align: center;
+}
+
+.dash-body{
+    display: grid;
+    grid-template-rows: repeat(2);
+}
+.post-info{
+    display: grid;
+    grid-template-rows: auto;
+}
+.post-info ol{
+    justify-content: space-between;
+
+}
+.meta{
+    justify-content: center;
+
+}
+.post-grid{
+    padding-bottom: 3rem;
+    
+}
+/* End of Post Styles */
 
 /* Footer Style */
 
@@ -329,3 +390,4 @@ footer.footer .move-up span:hover{
 }
 
 /*  Footer  */
+

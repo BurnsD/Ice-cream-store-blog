@@ -1,7 +1,7 @@
 <section>
   <h2>Create New Post</h2>
 <div class="new-post">
-  <form class="new-post-form">
+  <form class="form new-post-form">
     <div class="txt_field">
       <label for="post-title">Title</label>
       <input type="text" id="post-title" name="post-title" />
@@ -11,22 +11,23 @@
       <input id="post-content" name="post-content" />
     </div>
     <input type="submit" value="Create">
-    {{!-- <button type="submit" class="btn">Create</button> --}}
   </form>
 </div>
 </section>
 
 {{#if posts.length}}
-<section>
+<section class="post-list">
+  <div class="dash-body">
   <h2>Posts</h2>
-  <ol>
+  {{!-- <div class="post-info flex-row"> --}}
     {{#each posts as |post|}}
-    <li>
+    <div class="post-grid">
       {{> post-info post}}
       <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
-    </li>
+    </div>
     {{/each}}
-  </ol>
+  {{!-- </div> --}}
+  </div>
 </section>
 {{/if}}
 

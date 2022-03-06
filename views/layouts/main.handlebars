@@ -5,7 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ice Cream Store Blog</title>
+
+  {{!---------------------- Custom Style  -----------------------}}
   <link rel="stylesheet" href="/css/styleoverride.css">
+
+  {{!---------------------- Tailwind Link -----------------------}}
+
   {{!-- <link rel="stylesheet" href="/css/style.css"> --}}
   
 
@@ -18,18 +23,20 @@
       <h1>
         <a href="/">Ice Cream Store Blog</a>
       </h1>
-      <nav>
+      <nav class="nav">
+        <div class="nav-menu flex-row">
         {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
-        <button id="logout" class="bg-red-500 text-white font-bold py-2 px-4">logout</button>
+        <a href="/dashboard" class="nav__link nav__item dash-btn">Create Post</a>
+        <button id="logout" class="nav__link logout-btn">Logout</button>
         {{else}}
             <ul class="nav__list">
-                <li class=""><a href="/login" class="nav__link">Login</a></li>
+                <li class=""><a href="/login" class="nav__link login-btn">Login</a></li>
             </ul>
         {{/if}}
+        </div> 
       </nav>
     </header>
-    <main>
+    <main class="main">
       {{{ body }}}
     </main>
     <footer class="footer">
@@ -58,6 +65,7 @@
   </div>
   
   {{#if loggedIn}}
+  {{!-- logout --}}
   <script src="/javascript/logout.js"></script>
   {{/if}}
 </body>

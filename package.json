@@ -26,6 +26,7 @@
     "express-session": "^1.17.2",
     "express.js": "^1.0.0",
     "handlebars": "^4.7.7",
+    "jquery": "^3.6.0",
     "mysql2": "^2.3.3",
     "node.js": "^0.0.1-security",
     "sequelize": "^6.17.0",
