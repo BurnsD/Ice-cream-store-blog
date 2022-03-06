@@ -16,6 +16,9 @@
   
   ## [Description](#table-of-contents)
   We have come together for the love of Ice Cream and an Idea to start our own local Ice Cream Store. This application was made with the intent to gather information from internet users on all things Ice Cream
+  Everyone is welcome to view the conversations but you must sign in to an account to contribute.
+  Once a User signs up for an account they can add comments to discussions currently going on within the blog.
+  
 ![Screenshot](./public/images/login-scrnsht.png)
 
   ## [Usage](#table-of-contents)
