@@ -37,6 +37,7 @@ router.get('/', withAuth, (req, res) => {
       res.render('dashboard', { posts, loggedIn: true });
     })
     .catch(err => {
+      console.log ("Trying to find where the edit post error is occuring 444444");
       console.log(err);
       res.status(500).json(err);
     });

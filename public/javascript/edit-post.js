@@ -3,6 +3,7 @@ async function editFormHandler(event) {
   
     const title = document.querySelector('input[name="post-title"]').value.trim();
     const post_content = document.querySelector('input[name="post-content"]').value.trim();
+    console.log("INSIDE EDIT-POST.  I think this is where the error is happening: " + window.location.toString());
     const id = window.location.toString().split('/')[
       window.location.toString().split('/').length - 1
     ];
