@@ -292,7 +292,10 @@ main{
 .title{
     text-align: center;
 }
-
+.title a{
+    font-size: xx-large;
+    font-family: var(--Lexend);
+}
 .dash-body{
     display: grid;
     grid-template-rows: repeat(2);
@@ -307,6 +310,7 @@ main{
 }
 .meta{
     justify-content: center;
+    padding-bottom: 1rem;
 
 }
 .post-grid{
@@ -315,10 +319,13 @@ main{
 }
 .comments{
     padding: 1rem 2rem;
+
 }
 .comment{
     margin: 0 5px;
     padding: 2rem 2rem;
+    font-family: var(--Abel);
+    font-size: 1.3rem;
 }
 
 /* End of Post Styles */
