@@ -2,7 +2,8 @@ async function editFormHandler(event) {
     event.preventDefault();
   
     const title = document.querySelector('input[name="post-title"]').value.trim();
-    const title = document.querySelector('input[name="post-content"]').value.trim();
+    const post_content = document.querySelector('input[name="post-content"]').value.trim();
+    console.log("INSIDE EDIT-POST.  I think this is where the error is happening: " + window.location.toString());
     const id = window.location.toString().split('/')[
       window.location.toString().split('/').length - 1
     ];
@@ -18,9 +19,10 @@ async function editFormHandler(event) {
     });
   
     if (response.ok) {
-      console.log ("INSIDE EDIT-POST &&&&&&&&&&&&&&&&")
+      console.log ("INSIDE EDIT-POST &&&&&&&&&&&&&&&&");
         document.location.replace('/dashboard/');
     } else {
+      console.log ("INSIDE EDIT-POST WITH AN ERROR");
       alert(response.statusText);
     }
   }
