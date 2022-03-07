@@ -1,7 +1,7 @@
 
   # Ice Cream Store Blog
 
-  Git hub link: https://github.com/BurnsD/Ice-cream-store-blog
+  Git hub link: https://enigmatic-cove-92029.herokuapp.com/
   Heroku (deployed application) link: https://enigmatic-cove-92029.herokuapp.com/
   
   
